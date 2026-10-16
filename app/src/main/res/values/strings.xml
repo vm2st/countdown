@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Бордовый отсчёт</string>
+    <string name="developer">vm2 studios</string>
+    <string name="telegram">@vm2_studios</string>
+    <string name="widget_tap">Нажмите, чтобы настроить</string>
+    <string name="widget_01">Отсчёт — компактный 2×1</string><string name="widget_02">Отсчёт — широкий 3×1</string>
+    <string name="widget_03">Отсчёт — квадрат 2×2</string><string name="widget_04">Отсчёт — панорама 4×1</string>
+    <string name="widget_05">Отсчёт — карточка 3×2</string><string name="widget_06">Отсчёт — большой 4×2</string>
+    <string name="widget_07">Отсчёт — вертикальный 2×3</string><string name="widget_08">Отсчёт — постер 3×3</string>
+    <string name="widget_09">Отсчёт — экран 4×3</string><string name="widget_10">Отсчёт — максимальный 4×4</string>
+</resources>

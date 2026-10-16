@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.ChronoBurgundy" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:navigationBarColor">#160E11</item>
+        <item name="android:statusBarColor">#160E11</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

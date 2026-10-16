@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ChronoBurgundy">
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".widget.WidgetConfigureActivity" android:exported="true" android:theme="@style/Theme.ChronoBurgundy">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" /></intent-filter>
+        </activity>
+        <receiver android:name=".widget.PinWidgetReceiver" android:exported="false" />
+        <!-- Ten independently-sized launcher widgets. -->
+        <receiver android:name=".widget.Style01Provider" android:exported="true" android:label="@string/widget_01"><intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE"/><action android:name="android.intent.action.BOOT_COMPLETED"/><action android:name="android.intent.action.TIME_SET"/><action android:name="android.intent.action.TIMEZONE_CHANGED"/><action android:name="android.intent.action.DATE_CHANGED"/></intent-filter><meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_01_info"/></receiver>
+        <receiver android:name=".widget.Style02Provider" android:exported="true" android:label="@string/widget_02"><intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE"/><action android:name="android.intent.action.BOOT_COMPLETED"/><action android:name="android.intent.action.TIME_SET"/><action android:name="android.intent.action.TIMEZONE_CHANGED"/><action android:name="android.intent.action.DATE_CHANGED"/></intent-filter><meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_02_info"/></receiver>
+        <receiver android:name=".widget.Style03Provider" android:exported="true" android:label="@string/widget_03"><intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE"/><action android:name="android.intent.action.BOOT_COMPLETED"/><action android:name="android.intent.action.TIME_SET"/><action android:name="android.intent.action.TIMEZONE_CHANGED"/><action android:name="android.intent.action.DATE_CHANGED"/></intent-filter><meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_03_info"/></receiver>
+        <receiver android:name=".widget.Style04Provider" android:exported="true" android:label="@string/widget_04"><intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE"/><action android:name="android.intent.action.BOOT_COMPLETED"/><action android:name="android.intent.action.TIME_SET"/><action android:name="android.intent.action.TIMEZONE_CHANGED"/><action android:name="android.intent.action.DATE_CHANGED"/></intent-filter><meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_04_info"/></receiver>
+        <receiver android:name=".widget.Style05Provider" android:exported="true" android:label="@string/widget_05"><intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE"/><action android:name="android.intent.action.BOOT_COMPLETED"/><action android:name="android.intent.action.TIME_SET"/><action android:name="android.intent.action.TIMEZONE_CHANGED"/><action android:name="android.intent.action.DATE_CHANGED"/></intent-filter><meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_05_info"/></receiver>
+        <receiver android:name=".widget.Style06Provider" android:exported="true" android:label="@string/widget_06"><intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE"/><action android:name="android.intent.action.BOOT_COMPLETED"/><action android:name="android.intent.action.TIME_SET"/><action android:name="android.intent.action.TIMEZONE_CHANGED"/><action android:name="android.intent.action.DATE_CHANGED"/></intent-filter><meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_06_info"/></receiver>
+        <receiver android:name=".widget.Style07Provider" android:exported="true" android:label="@string/widget_07"><intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE"/><action android:name="android.intent.action.BOOT_COMPLETED"/><action android:name="android.intent.action.TIME_SET"/><action android:name="android.intent.action.TIMEZONE_CHANGED"/><action android:name="android.intent.action.DATE_CHANGED"/></intent-filter><meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_07_info"/></receiver>
+        <receiver android:name=".widget.Style08Provider" android:exported="true" android:label="@string/widget_08"><intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE"/><action android:name="android.intent.action.BOOT_COMPLETED"/><action android:name="android.intent.action.TIME_SET"/><action android:name="android.intent.action.TIMEZONE_CHANGED"/><action android:name="android.intent.action.DATE_CHANGED"/></intent-filter><meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_08_info"/></receiver>
+        <receiver android:name=".widget.Style09Provider" android:exported="true" android:label="@string/widget_09"><intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE"/><action android:name="android.intent.action.BOOT_COMPLETED"/><action android:name="android.intent.action.TIME_SET"/><action android:name="android.intent.action.TIMEZONE_CHANGED"/><action android:name="android.intent.action.DATE_CHANGED"/></intent-filter><meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_09_info"/></receiver>
+        <receiver android:name=".widget.Style10Provider" android:exported="true" android:label="@string/widget_10"><intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE"/><action android:name="android.intent.action.BOOT_COMPLETED"/><action android:name="android.intent.action.TIME_SET"/><action android:name="android.intent.action.TIMEZONE_CHANGED"/><action android:name="android.intent.action.DATE_CHANGED"/></intent-filter><meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_10_info"/></receiver>
+    </application>
+</manifest>
